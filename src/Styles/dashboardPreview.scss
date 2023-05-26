@@ -28,6 +28,7 @@
   position: relative;
   z-index: 10;
   overflow: hidden; /* Hide the scrollbar */
+  scrollbar-width: none; /* For Firefox */
 }
 
 .animation_layer {
@@ -42,14 +43,14 @@
   position: fixed;
 }
 
-/* Hide the scrollbar for WebKit browsers */
+/* Hide the scrollbar for Firefox */
 .animation::-webkit-scrollbar {
-  width: 0.5em; /* Adjust this value to change scrollbar thickness */
-  background-color: transparent; /* Set the scrollbar background color */
+  display: none;
 }
 
-.animation::-webkit-scrollbar-thumb {
-  background-color: #888; /* Set the scrollbar thumb color */
+/* Hide the scrollbar for WebKit browsers */
+.animation {
+  -ms-overflow-style: none;
 }
 
 /* Add any additional styles as needed */
