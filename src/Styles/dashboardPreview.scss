@@ -1,0 +1,118 @@
+@import "./constant";
+@import "./variables";
+
+.app__dashboard {
+	overflow: hidden;
+	height: 80%;
+	width: 80%;
+	position: absolute;
+	bottom: -80%;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+	img {
+		width: 100%;
+		border-radius: 40px;
+		box-shadow: $shadow;
+	}
+}
+
+.animation,
+.animation_layer {
+  height: 1000px;
+}
+
+.animation {
+  display: block;
+  position: relative;
+  z-index: 10;
+  overflow: hidden; /* Hide the scrollbar */
+}
+
+.animation_layer {
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+
+.animation_layer.parallax {
+  position: fixed;
+}
+
+/* Hide the scrollbar for WebKit browsers */
+.animation::-webkit-scrollbar {
+  width: 0.5em; /* Adjust this value to change scrollbar thickness */
+  background-color: transparent; /* Set the scrollbar background color */
+}
+
+.animation::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the scrollbar thumb color */
+}
+
+/* Add any additional styles as needed */
+
+
+#layer1 {
+	height: 100%;
+	width: auto;
+	background-image: url(../Images/layer1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#layer2 {
+	height: 100%;
+	width: auto;
+	background-image: url(../Images/layer2.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#layer3 {
+	height: 100%;
+	width: auto;
+	background-image: url(../Images/layer3.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#layer4 {
+	height: 100%;
+	width: auto;
+	background-image: url(../Images/layer4.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#layer5 {
+	height: 100%;
+	width: auto;
+	background-image: url(../Images/layer5.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#layer6 {
+	height: 100%;
+	width: auto;
+	background-image: url(../Images/layer6.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#layer7 {
+	height: 100%;
+	width: auto;
+	background-image: url(../Images/layer7.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+// Test hide scroll bar
+
+
+  
