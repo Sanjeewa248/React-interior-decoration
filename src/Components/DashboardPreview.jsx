@@ -12,35 +12,75 @@ import {
 	layer7,
 } from "../Images";
 
+
+
 const DashboardPreview = () => {
 	return (
-		<div className="app__dashboard">
+		<div className="app__dashboard" id="dashboard_preview">
 			<Parallax pages={3} style={{ top: "0", left: "0" }} class="animation">
-				<ParallaxLayer offset={0} speed={0.1} x={-100} z={-1}>
+				<ParallaxLayer offset={0} speed={0} x={-100} z={-1}>
 					<div className="animation__layer parallax" id="layer1"></div>
 				</ParallaxLayer>
-				<ParallaxLayer offset={0} speed={0.3} x={50} z={0}>
+				<ParallaxLayer offset={0} speed={0} x={50} z={0}>
 					<div className="animation__layer parallax" id="layer2"></div>
 				</ParallaxLayer>
-				<ParallaxLayer offset={0} speed={-0.2} x={-30} z={-3}>
+				<ParallaxLayer offset={0} speed={-0} x={-30} z={-3}>
 					<div className="animation__layer parallax" id="layer3"></div>
 				</ParallaxLayer>
-				<ParallaxLayer offset={0} speed={0.2} x={80} z={-4}>
+				<ParallaxLayer offset={0} speed={0} x={80} z={-4}>
 					<div className="animation__layer parallax" id="layer4"></div>
 				</ParallaxLayer>
-				<ParallaxLayer offset={0} speed={0.25} x={-60} z={-5}>
+				<ParallaxLayer offset={0} speed={0} x={-60} z={-5}>
 					<div className="animation__layer parallax" id="layer5"></div>
 				</ParallaxLayer>
-				<ParallaxLayer offset={0} speed={0.4} x={-70} z={-6}>
+				<ParallaxLayer offset={0} speed={0} x={-70} z={-6}>
 					<div className="animation__layer parallax" id="layer6"></div>
 				</ParallaxLayer>
-				<ParallaxLayer offset={0} speed={0.35} x={90} z={-7}>
+				<ParallaxLayer offset={0} speed={0} x={90} z={-7}>
 					<div className="animation__layer parallax" id="layer7"></div>
 				</ParallaxLayer>
 			</Parallax>
 		</div>
 	);
 };
+
+window.addEventListener('scroll', function() {
+	var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+	var translateY = -scrollPosition + 'px';
+  
+	var myElement = document.getElementById('dashboard_preview');
+	myElement.style.transform = 'translate3d(0px, ' + translateY + ', 0px)';
+  });
+  
+// const DashboardPreview = () => {
+// 	return (
+// 		<div className="app__dashboard">
+// 			<Parallax pages={3} style={{ top: "0", left: "0" }} class="animation">
+// 				<ParallaxLayer offset={0} speed={0.1} x={-100} z={-1}>
+// 					<div className="animation__layer parallax" id="layer1"></div>
+// 				</ParallaxLayer>
+// 				<ParallaxLayer offset={0} speed={0.3} x={50} z={0}>
+// 					<div className="animation__layer parallax" id="layer2"></div>
+// 				</ParallaxLayer>
+// 				<ParallaxLayer offset={0} speed={-0.2} x={-30} z={-3}>
+// 					<div className="animation__layer parallax" id="layer3"></div>
+// 				</ParallaxLayer>
+// 				<ParallaxLayer offset={0} speed={0.2} x={80} z={-4}>
+// 					<div className="animation__layer parallax" id="layer4"></div>
+// 				</ParallaxLayer>
+// 				<ParallaxLayer offset={0} speed={0.25} x={-60} z={-5}>
+// 					<div className="animation__layer parallax" id="layer5"></div>
+// 				</ParallaxLayer>
+// 				<ParallaxLayer offset={0} speed={0.4} x={-70} z={-6}>
+// 					<div className="animation__layer parallax" id="layer6"></div>
+// 				</ParallaxLayer>
+// 				<ParallaxLayer offset={0} speed={0.35} x={90} z={-7}>
+// 					<div className="animation__layer parallax" id="layer7"></div>
+// 				</ParallaxLayer>
+// 			</Parallax>
+// 		</div>
+// 	);
+// };
 
 
 export default DashboardPreview;

@@ -20,7 +20,7 @@
 
 .animation,
 .animation_layer {
-  height: 1000px;
+//   height: 1000px;
 }
 
 .animation {
@@ -45,12 +45,12 @@
 
 /* Hide the scrollbar for Firefox */
 .animation::-webkit-scrollbar {
-  display: none;
+//   display: none;
 }
 
 /* Hide the scrollbar for WebKit browsers */
 .animation {
-  -ms-overflow-style: none;
+//   -ms-overflow-style: none;
 }
 
 /* Add any additional styles as needed */
